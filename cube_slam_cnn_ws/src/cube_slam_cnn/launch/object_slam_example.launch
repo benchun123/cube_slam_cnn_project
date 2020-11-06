@@ -1,0 +1,17 @@
+<!-- -->
+<launch>
+    <node pkg="cube_slam_cnn" type="object_slam_node" name="object_slam_node" output="screen">	
+    </node>
+    
+    <param name="base_folder" value="$(find cube_slam_cnn)/data/" />
+    <param name="online_detect_mode" value="true" />  # detect cuboid online or read offline matlab txt
+    <param name="save_results_to_txt" value="false" />
+    <param name="whether_use_3d_IoU" value="true" />
+    <param name="whether_use_fqnet" value="false" />
+    <param name="whether_print_final_cuboid_details" value="false" />
+    <param name="addnumber" value="20" />
+
+    <!-- launch rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find cube_slam_cnn)/rviz/object_slam.rviz"/>	
+	
+</launch>

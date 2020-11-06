@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/benchun/benchun/object/cubeslam_cmake/sample_object/src/main_iou_calculation.cpp
+iostream
+-
+algorithm
+-
+stdio.h
+-
+math.h
+-
+vector
+-
+strings.h
+-
+boost/numeric/ublas/matrix.hpp
+-
+boost/numeric/ublas/io.hpp
+-
+boost/geometry.hpp
+-
+boost/geometry/geometries/point_xy.hpp
+-
+boost/geometry/geometries/polygon.hpp
+-
+boost/geometry/geometries/adapted/c_array.hpp
+-
+
